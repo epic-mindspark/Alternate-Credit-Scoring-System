@@ -1,0 +1,170 @@
+/* ── Custom UI Components for Alternate Credit Scoring Dashboard ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* ── Metric Cards ───────────────────────────────────────────── */
+.metric-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    margin-bottom: 1rem;
+}
+.metric-card-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748B;
+    margin-bottom: 0.5rem;
+}
+.metric-card-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0F172A;
+    line-height: 1.1;
+}
+.metric-card-sub {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    margin-top: 0.25rem;
+}
+
+/* ── Decision Banner ─────────────────────────────────────────── */
+.decision-banner {
+    border-radius: 10px;
+    padding: 1.25rem 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.decision-approve {
+    background: #ECFDF5;
+    border: 2px solid #059669;
+    color: #065F46;
+}
+.decision-review {
+    background: #FFFBEB;
+    border: 2px solid #D97706;
+    color: #92400E;
+}
+.decision-reject {
+    background: #FEF2F2;
+    border: 2px solid #DC2626;
+    color: #991B1B;
+}
+
+/* ── Confidence Badges ───────────────────────────────────────── */
+.badge {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0.2rem 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+.badge-high    { background: #D1FAE5; color: #065F46; }
+.badge-medium  { background: #FEF3C7; color: #92400E; }
+.badge-low     { background: #FEE2E2; color: #991B1B; }
+
+/* ── Factor Cards ────────────────────────────────────────────── */
+.factor-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid;
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
+}
+.factor-positive { border-left-color: #059669; }
+.factor-negative { border-left-color: #DC2626; }
+.factor-label    { font-weight: 600; color: #1E293B; }
+.factor-shap     { font-size: 0.76rem; color: #64748B; margin-top: 0.15rem; }
+
+/* ── Section headings in main area ──────────────────────────── */
+.section-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: #475569;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+/* ── NL Summary box ──────────────────────────────────────────── */
+.nl-summary-box {
+    background: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    border-left: 4px solid #2563EB;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: #1E293B;
+}
+
+/* ── Probability display ─────────────────────────────────────── */
+.prob-display {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+.prob-low    { color: #059669; }
+.prob-medium { color: #D97706; }
+.prob-high   { color: #DC2626; }
+
+/* ── Cluster info ────────────────────────────────────────────── */
+.cluster-badge {
+    display: inline-block;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    border-radius: 6px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1E40AF;
+}
+
+/* ── Sidebar Headings ────────────────────────────────────────── */
+.sidebar-section-header {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748B !important;
+    padding: 0.5rem 0 0.25rem 0;
+    border-bottom: 1px solid #CBD5E1;
+    margin-bottom: 0.5rem;
+}
+
+/* ── App Header (Sidebar) ────────────────────────────────────── */
+.app-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 10px;
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 1.25rem;
+    color: white;
+}
+.app-header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+.app-header p {
+    font-size: 0.85rem;
+    color: #BFDBFE;
+    margin: 0.25rem 0 0 0;
+}
